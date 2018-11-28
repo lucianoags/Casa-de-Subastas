@@ -15,6 +15,31 @@ public class Interface {
         Scanner scanner = new  Scanner(System.in);
         String i = scanner.next();
         System.out.println(i);
+        switch (i)
+        {
+            case "1":
+                vendedor();
+                break;
+                
+            case "2":
+                comprador();
+                break;
+            case "3":
+                observador();
+                break;
+        }
+    }
+
+    private void vendedor() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void comprador() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void observador() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
