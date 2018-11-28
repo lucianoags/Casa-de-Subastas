@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Luciano García
+ */
+public class Interface {
+    
+    public void tipoCuenta()
+    {
+        System.out.println("Bienvenido, seleccione un tipo de cuenta:");
+        System.out.println("[1] Vendedor");
+        System.out.println("[2] Comprador");
+        System.out.println("[3] Observador");
+        Scanner scanner = new  Scanner(System.in);
+        String i = scanner.next();
+        System.out.println(i);
+    }
+    
+}
