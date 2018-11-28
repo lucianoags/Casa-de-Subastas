@@ -15,30 +15,47 @@ public class Interface {
         Scanner scanner = new  Scanner(System.in);
         String i = scanner.next();
         System.out.println(i);
-        switch (i)
-        {
-            case "1":
-                vendedor();
-                break;
-                
-            case "2":
-                comprador();
-                break;
-            case "3":
-                observador();
-                break;
-        }
+        switch (i) 
+        { 
+            case "1": 
+                vendedor(); 
+                break; 
+                 
+            case "2": 
+                comprador(); 
+                break; 
+            case "3": 
+                observador(); 
+                break; 
+        } 
+    } 
+ 
+    private void vendedor() { 
+        System.out.println("Cuenta vendedor, seleccione una opcion:");
+        System.out.println("[1] Registrar articulo en la subasta");
+        System.out.println("[2] Cambiar tipo de cuenta");
+        String i = scanner.next();
+               switch (i) 
+        { 
+            case "1": 
+                registrarArticulo(); 
+                break; 
+                 
+            case "2": 
+                tipoCuenta(); 
+                break; 
+        } 
+    } 
+ 
+    private void comprador() { 
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates. 
+    } 
+ 
+    private void observador() { 
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates. 
     }
 
-    private void vendedor() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void comprador() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private void observador() {
+    private void registrarArticulo() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
